@@ -37,16 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     }
 
-    a {
-    color: inherit;
-    text-decoration: none;
-    }
 
-    ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
 
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
