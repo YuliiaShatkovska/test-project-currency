@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { BsCurrencyDollar } from 'react-icons/bs';
+
 import { CurrencyWrapper, DateText, UsdRateText } from './CurrencyBlock.styled';
 import { getDollarRate } from 'api';
 
@@ -9,9 +10,9 @@ export const CurrencyBlock = () => {
   useEffect(() => {
     const getUsd = async () => {
       try {
-        const { data } = await getDollarRate();
+        const data = await getDollarRate();
 
-        setUsd(data.usdRate);
+        setUsd(data);
       } catch (error) {
         console.log(error);
       }

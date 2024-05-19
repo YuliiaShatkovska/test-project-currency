@@ -23,6 +23,7 @@ export const UsdRateText = styled.p`
     font-size: 18px;
     display: flex;
     align-items: center;
+
     gap: 4px;
   }
 `;
